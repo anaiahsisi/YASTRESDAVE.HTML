@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolitan Grand Hotel - Online Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Impact, 'Arial Narrow Bold', sans-serif, sans-serif, Century;
+            margin: 0;
+            padding: 0;
+            background-color: #313036a2;
+            background-image:  linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(123.jpg);
+            color: #f5f0f0;
+        }
+        header {
+            background-color: #0d0d0e;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        nav {
+            background-color: #302f3691;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #79797a;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Metropolitan Grand Hotel</h1>
+        <p>Your luxurious stay begins here</p>
+    </header>
+    <nav>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="content">
+    <section id="about">
+        <h2>ABOUT US</h2>
+        <p> Metropolitan Grand Hotel is a prestigious hotel located in the heart of the city. With luxurious amenities and unparalleled service, we ensure a memorable stay for our guests.</p>
+        <p>Experience luxury and sophistication at Metropolitan Grand Hotel, the epitome of cosmopolitan elegance. Located in the bustling city center,<br> our hotel features opulent rooms, world-class dining options, and exclusive amenities for a truly unforgettable urban escape.</p>
+    </section>
+   
+    <section id="rooms"> 
+        <h2>OUR ROOMS</h2>
+        <p>Choose from our selection of elegant rooms and suites, each designed to provide utmost comfort and luxury.</p>
+         <nav>
+            <img src="download (3).jpg"> <img src="download (1).jpg">
+            <img src="download (2).jpg"> <img src="images (1).jpg">
+        </nav>
+    </section>
+   
+    <section id="booking">
+        <h2>BOOK NOW</h2>
+        <p>Ready to experience luxury at its finest? Book your stay now and prepare for an unforgettable experience.</p>
+        <form action="book.php" method="post">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required><br><br>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required><br><br>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required><br><br>
+            <input type="submit" value="Book Now">
+        </form>
+    </section>
+    <section id="contact">
+        <h2>CONTACT US</h2>
+        <p>Have questions or need assistance? Contact our friendly staff for help.</p>
+        <p>EMAIL: MetropolitanGrandHotel@gmail.com</p>
+        <p>CALL US: +635274873987</p>
+        <p>.</p>
+    </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Metropolitan Grand Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
